@@ -1,0 +1,6 @@
+{
+    "events": [
+        "../db/sample1.json",
+        "../db/sample2.json"
+    ]
+}

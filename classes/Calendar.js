@@ -4,10 +4,11 @@
 export default class Calendar {
   calendarElement;
   calendar;
+  events;
 
-  constructor(calendarElement) {
-    console.log("Itt vagyok");
+  constructor(calendarElement, events) {
     this.calendarElement = calendarElement;
+    this.events = events;
     this.calendar = new FullCalendar.Calendar(
       calendarElement,
       this.getConfig()
@@ -26,20 +27,7 @@ export default class Calendar {
       buttonText: {
         today: "Ma",
       },
-      events: [
-        {
-          // this object will be "parsed" into an Event Object
-          title: "The Title", // a property!
-          start: "2024-02-12", // a property!
-          end: "2024-02-18", // a property! ** see important note below about 'end' **
-        },
-        {
-          // this object will be "parsed" into an Event Object
-          title: "The Title", // a property!
-          start: "2024-02-15", // a property!
-          end: "2024-02-18", // a property! ** see important note below about 'end' **
-        },
-      ],
+      events: this.events,
     };
 
     return config;
