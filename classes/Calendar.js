@@ -7,12 +7,16 @@ export default class Calendar {
   events;
 
   constructor(calendarElement, events) {
-    this.calendarElement = calendarElement;
-    this.events = events;
-    this.calendar = new FullCalendar.Calendar(
-      calendarElement,
-      this.getConfig()
-    );
+    try {
+      this.calendarElement = calendarElement;
+      this.events = events;
+      this.calendar = new FullCalendar.Calendar(
+        calendarElement,
+        this.getConfig()
+      );
+    } catch (e) {
+      console.log("An error occured during creating Calendar: ", e);
+    }
   }
 
   render() {
