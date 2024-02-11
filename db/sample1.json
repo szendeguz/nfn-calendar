@@ -1,0 +1,12 @@
+{
+    "9/12/2014": {
+        "project":"asd-01",
+        "title": "Teszt bank",
+        "date-start": "02/10/2024",
+        "date-end": "02/15/2024",
+        "time-start": "02/10/2024 10:00 AM",
+        "time-end": "02/15/2024 19:00 AM",
+        "desc": "BBT.",
+        "more": "http://www.example.com"
+    }
+}
