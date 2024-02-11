@@ -27,6 +27,7 @@ export default class Calendar {
       buttonText: {
         today: "Ma",
       },
+      height: 650,
       events: this.events,
     };
 
