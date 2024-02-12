@@ -6,6 +6,7 @@ export default class JsonLoader {
   headers = {
     headers: {
       "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
     },
   };
   configPath = "../config.json";
